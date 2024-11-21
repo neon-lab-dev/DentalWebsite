@@ -3,7 +3,7 @@
 const OurServices = () => {
     return (
         <div>
-            OurServices
+            Our Services Component
         </div>
     );
 };

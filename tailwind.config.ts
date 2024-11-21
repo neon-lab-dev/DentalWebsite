@@ -8,9 +8,21 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Amiri: ["Amiri", "serif"],
+        Poppins: ["Poppins", "sans-serif"],
+      },
+
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          10: "#FF7F50",
+        },
+        secondary: {
+          10: "#ADD8E6",
+        },
+        neutral: {
+          10: "#333333",
+        },
       },
     },
   },
