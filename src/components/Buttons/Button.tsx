@@ -3,13 +3,17 @@ import React from 'react';
 interface ButtonProps {
   text: string;
   onClick: () => void;
-  className?: string; // Custom className for further customization
+  className?: string; 
   type?: 'button' | 'submit' | 'reset';
   disabled?: boolean;
   image?: string; // Optional image URL or path
   imageAlt?: string; // Alt text for the image
-  bgColor?: string; // Background color for the button
+  buttonColor?: string; // Background color for the button
   textcolor?:string // Button Text color
+  horizontalpadding?:number
+  verticalpadding?:number
+  bordercolor?:string
+  isButtonOutlined?:boolean
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -20,16 +24,23 @@ const Button: React.FC<ButtonProps> = ({
   disabled = false,
   image,
   imageAlt = 'button image',
-  bgColor = 'bg-gradient-to-b from-[#FF7F50]  to-[#FF7F50]', // Default to blue color if no bgColor is provided
-  textcolor='text-white'
+  // buttonColor = 'bg-gradient-to-b from-[#FF7F50]  to-[#FF7F50]', 
+  buttonColor='#FF7F50',
+  textcolor='#ffffff',
+  horizontalpadding=16,
+  verticalpadding=20,
+  isButtonOutlined=false
 }) => {
     // background: linear-gradient(180deg, #FF7F50 0%, #F07F38 90.13%);
+const textColorClass=isButtonOutlined ?`text-[${buttonColor}]`: `text-[${textcolor}]`;
+const bgColorClass=`bg-[${buttonColor}]`;
+const borderColorClass=`bg-transparent border border-[${buttonColor}] `;
 
   return (
     <button
       type={type}
       onClick={onClick}
-      className={`flex items-center justify-center p-6 font-semibold  text-[22px] font-poppins  ${textcolor} rounded-full ${bgColor} ${className}`}
+      className={`flex items-center justify-center  font-semibold  text-[22px] font-poppins rounded-full  ${textColorClass} px-${horizontalpadding}px py-${verticalpadding}px  ${isButtonOutlined? borderColorClass : bgColorClass}  ${className}`}
       disabled={disabled}
     >
       {image && <img src={image} alt={imageAlt} className="w-5 h-5 mr-2" />}

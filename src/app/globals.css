@@ -24,7 +24,7 @@
   font-family: var(--primaryFont);
 }
 
-/* Another div using the secondary font (Poppins) */
+
 .font-poppins {
   font-family: var(--secondaryFont);
 }
