@@ -1,7 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #f5f5dc;
+    --foreground: #101010;
+
+    --primaryFont: "Amiri", sans-serif;
+    --secondaryFont: "Poppins", sans-serif;
+  }
+}
+.font-amiri {
+  font-family: var(--primaryFont);
+}
+
+/* Another div using the secondary font (Poppins) */
+.font-poppins {
+  font-family: var(--secondaryFont);
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  background-color: #f5f5dc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+  &__container {
+    height: 580px;
+    width: 90%;
+    background: #add8e6;
+    border-radius: 48px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__menu-title {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #101010;
+  }
+
+  &__menu-list {
+    margin-top: 0.5rem;
+    font-size: 22px;
+    font-weight: 400;
+    color: #333333;
+    font-family: "Poppins", sans-serif;
+  }
+
+  &__menu-item {
+    cursor: pointer;
+  }
+}
