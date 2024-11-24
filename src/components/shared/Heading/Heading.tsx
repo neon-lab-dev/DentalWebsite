@@ -3,9 +3,9 @@ import { ReactNode } from "react";
 type THeading = {
   subHeading: string;
   children: ReactNode;
-  classNames: string;
+  classNames?: string;
   aligned: string;
-  headingWidth: string | number;
+  headingWidth?: string | number;
   isHeadingCenter : boolean;
 };
 

@@ -21,7 +21,7 @@ const ServiceCard: React.FC<TServiceCard> = ({ service }) => {
         className="rounded-t-3xl h-[214px]"
       />
       <div className="px-6 pb-6 pt-[18px]">
-        <h1 className="text-neutral-15 text-[32px] font-bold leading-[48px]">
+        <h1 className="text-neutral-15 text-[32px] font-bold leading-[48px] font-Amiri">
           {service.title}
         </h1>
         <p className="text-neutral-10 font-Poppins text-xl mt-4">

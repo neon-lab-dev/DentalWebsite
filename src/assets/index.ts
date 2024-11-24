@@ -1,6 +1,8 @@
 import phone from "@/assets/icons/Phone.svg";
 import arrowUp from "@/assets/icons/arrow-up.svg";
 import arrowUpWhite from "@/assets/icons/arrow-up-white.svg";
+import expertise from "@/assets/icons/expertise.svg";
+import care from "@/assets/icons/care.svg";
 
 
 
@@ -20,10 +22,15 @@ import logo2 from "@/assets/images/Daco_6096030 1.png";
 import logo3 from "@/assets/images/Forbes.png";
 import logo4 from "@/assets/images/Fortune logo.png";
 
+// Why us img
+import whyUs from "@/assets/images/why-us.png";
+
 export const ICONS = {
     phone,
     arrowUp,
-    arrowUpWhite
+    arrowUpWhite,
+    expertise,
+    care,
 };
 
 export const IMAGES = {
@@ -37,4 +44,5 @@ export const IMAGES = {
     logo2,
     logo3,
     logo4,
+    whyUs,
 }
