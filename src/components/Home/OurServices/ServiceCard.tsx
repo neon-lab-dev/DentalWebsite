@@ -24,7 +24,7 @@ const ServiceCard: React.FC<TServiceCard> = ({ service }) => {
         <h1 className="text-neutral-15 text-[32px] font-bold leading-[48px] font-Amiri">
           {service.title}
         </h1>
-        <p className="text-neutral-10 font-Poppins text-xl mt-4">
+        <p className="text-neutral-10 font-Poppins text-xl mt-2 2xl:mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
           nunc sollicitudin
         </p>

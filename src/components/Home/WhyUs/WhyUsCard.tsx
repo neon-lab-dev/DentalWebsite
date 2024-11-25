@@ -20,7 +20,7 @@ const WhyUsCard: React.FC<TWhyUsCard> = ({ info }) => {
       <h1 className="text-neutral-15 text-[28px] font-bold leading-[32px] font-Amiri mt-8">
         {info.title}
       </h1>
-      <p className="text-neutral-10 font-Poppins text-xl mt-4">
+      <p className="text-neutral-10 font-Poppins text-xl mt-2 2xl:mt-4">
         {info.description}
       </p>
     </div>

@@ -15,7 +15,7 @@ const OurClinic = () => {
       <Image
         src={IMAGES.clinic}
         alt="Clinic image"
-        className={`w-full max-w-[600px] object-cover rounded-3xl h-[600px]`}
+        className={`w-full max-w-[500px] 2xl:max-w-[824px] object-cover rounded-3xl max-h-[600px] 2xl:max-h-[831px]`}
       />
 
       <div>
@@ -23,7 +23,7 @@ const OurClinic = () => {
           subHeading={"OUR CLINICS"}
           classNames={""}
           aligned={"Left"}
-          headingWidth={"618px"}
+          headingWidth={"max-w-[618px]"}
           isHeadingCenter={false}
         >
           Visit <span className="text-primary-10">Our Modern</span>,

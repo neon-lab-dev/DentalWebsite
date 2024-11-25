@@ -29,6 +29,7 @@ export default {
       },
       backgroundImage: {
         'primary-gradient': 'linear-gradient(180deg, #FF7F50 0%, #F07F38 90.13%)',
+        'orange-gradient' : 'linear-gradient(180deg, rgba(255, 127, 80, 0.00) 0%, #D04B1A 100%)',
       },
     },
   },

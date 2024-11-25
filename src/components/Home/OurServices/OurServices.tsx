@@ -3,34 +3,11 @@ import Button from "@/components/Buttons/Button";
 import Heading from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 import ServiceCard from "./ServiceCard";
+import { ourServices } from "./ourService.data";
 
 const OurServices = () => {
-  const ourServices = [
-    {
-      title: "Emergency Exam",
-      description: "Same-day care from a team of friendly experts.",
-      img: IMAGES.patient1,
-    },
-    {
-      title: "Teeth Whitening",
-      description:
-        "A brighter smile in 90 minutes? It’s easier (and more affordable!) than you think.",
-      img: IMAGES.patient2,
-    },
-    {
-      title: "Invisalign",
-      description:
-        "Faster. Smarter. More affordable with better results. Thousands of satisfied smiles.",
-      img: IMAGES.patient2,
-    },
-    {
-      title: "Implants",
-      description: "We are implant specialists that use 3D-guided technology.",
-      img: IMAGES.patient4,
-    },
-  ];
   return (
-    <div>
+    <div className="">
       {/* Heading */}
       <div className="flex items-center justify-between w-full">
         <div className="flex-1">
@@ -38,7 +15,7 @@ const OurServices = () => {
             subHeading={"OUR SERVICES"}
             classNames={""}
             aligned={"Left"}
-            headingWidth={"656px"}
+            headingWidth={"max-w-[500px] 2xl:max-w-[656px]"}
             isHeadingCenter={false}
           >
             <span className="text-primary-10">Expert Dental Care</span> for
@@ -61,7 +38,7 @@ const OurServices = () => {
             className="h-[483px] rounded-t-3xl"
           />
           <div className="p-6">
-            <h1 className="text-neutral-15 text-[32px] font-bold leading-[48px]">
+            <h1 className="text-neutral-15 text-[27px] 2xl:text-[32px] font-bold leading-[48px]">
               First Visit to Dentologie
             </h1>
             <p className="text-neutral-10 font-Poppins text-xl mt-4">
@@ -69,7 +46,7 @@ const OurServices = () => {
               nunc sollicitudin
             </p>
 
-            <Button variant="Outlined" classNames="px-[50px] py-4 mt-[56px]">
+            <Button variant="Outlined" classNames="px-[50px] py-4 mt-[30px] 2xl:mt-[56px]">
               Learn More
               <Image
                 src={ICONS.arrowUp}

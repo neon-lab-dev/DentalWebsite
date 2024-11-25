@@ -19,11 +19,11 @@ const WhyUs = () => {
     },
   ];
   return (
-    <div className="flex items-center gap-[175px]">
+    <div className="flex items-center gap-[100px]  2xl:gap-[175px]">
       <Image
         src={IMAGES.whyUs}
         alt="why-us-img"
-        className="max-w-[500px] rounded-3xl"
+        className="max-w-[500px] 2xl:max-w-[823px] rounded-3xl"
       />
       <div>
         <Heading
