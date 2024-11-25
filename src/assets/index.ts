@@ -25,6 +25,13 @@ import logo4 from "@/assets/images/Fortune logo.png";
 // Why us img
 import whyUs from "@/assets/images/why-us.png";
 
+// Our clinic img
+import clinic from "@/assets/images/clinic.png";
+import clinic1 from "@/assets/images/clinic1.png";
+import clinic2 from "@/assets/images/clinic2.png";
+import clinic3 from "@/assets/images/clinic3.png";
+import clinic4 from "@/assets/images/clinic4.png";
+
 export const ICONS = {
     phone,
     arrowUp,
@@ -45,4 +52,9 @@ export const IMAGES = {
     logo3,
     logo4,
     whyUs,
+    clinic,
+    clinic1,
+    clinic2,
+    clinic3,
+    clinic4,
 }
