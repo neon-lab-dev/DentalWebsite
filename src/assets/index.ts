@@ -7,6 +7,8 @@ import care from "@/assets/icons/care.svg";
 import leftDisabledArrow from "@/assets/icons/left-disabled-arrow.svg";
 import rightActiveArrow from "@/assets/icons/right--active-arrow.svg";
 import quotation from "@/assets/icons/quotation.svg";
+import nextActive from "@/assets/icons/next-active.svg";
+import previousDisabled from "@/assets/icons/previous-disabled.svg";
 
 
 
@@ -49,6 +51,11 @@ import blog3 from "@/assets/images/blog3.png";
 import newsletter from "@/assets/images/newsletter.png";
 import profileImg from "@/assets/images/profileImg (2).png";
 
+
+// Blog page
+// Hero img
+import blogHEroImg from "@/assets/images/blog-hero-img.png";
+
 export const ICONS = {
     phone,
     arrowUp,
@@ -59,6 +66,8 @@ export const ICONS = {
     leftDisabledArrow,
     rightActiveArrow,
     quotation,
+    nextActive,
+    previousDisabled,
 };
 
 export const IMAGES = {
@@ -84,4 +93,5 @@ export const IMAGES = {
     blog3,
     newsletter,
     profileImg,
+    blogHEroImg,
 }
