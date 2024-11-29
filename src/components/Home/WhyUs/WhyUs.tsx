@@ -28,7 +28,6 @@ const WhyUs = () => {
       <div>
         <Heading
           subHeading={"WHY US"}
-          isSubheading={true}
           classNames={""}
           aligned={"Left"}
           // headingWidth={"200px"}

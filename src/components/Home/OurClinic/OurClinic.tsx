@@ -21,7 +21,7 @@ const OurClinic = () => {
       <div>
         <Heading
           subHeading={"OUR CLINICS"}
-          isSubheading={true}
+        
           classNames={""}
           aligned={"Left"}
           headingWidth={"max-w-[618px]"}
