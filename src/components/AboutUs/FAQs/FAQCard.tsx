@@ -12,9 +12,9 @@ const FAQCard = () => {
 
   return (
     <div
-      className={`relative rounded-[32px] flex justify-center transition-all duration-300 ease-in-out  shadow-[0px_0px_4px_0px_rgba(0, 0, 0, 0.25)] self-stretch ${
+      className={`relative rounded-[32px] flex justify-center transition-all duration-300 ease-in-out px-12  py-[58px] border border-[#00000040]  self-stretch ${
         isExpanded
-          ? "h-[200px] bg-white flex-col justify-center px-10 py-5"
+          ? "h-[200px] bg-white flex-col justify-center border border-orange-500 "
           : "h-[178px] items-center"
       }`}
     >

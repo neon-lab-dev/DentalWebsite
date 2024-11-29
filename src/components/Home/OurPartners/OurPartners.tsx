@@ -14,7 +14,7 @@ const OurPartners = () => {
         <div className="flex flex-col gap-[65px]">
         <Heading
           subHeading={"OUR PARTNERS"}
-          isSubheading={true}
+          
           classNames={""}
           aligned={"Center"}
           headingWidth={"max-w-[870px]"}
