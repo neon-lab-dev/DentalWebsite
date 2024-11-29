@@ -1,4 +1,6 @@
 import phone from "@/assets/icons/Phone.svg";
+import email from "@/assets/icons/email.svg";
+import location from "@/assets/icons/location.svg";
 import arrowUp from "@/assets/icons/arrow-up.svg";
 import arrowUpWhite from "@/assets/icons/arrow-up-white.svg";
 import arrowUpBlack from "@/assets/icons/arrowUp-black.svg";
@@ -69,6 +71,8 @@ import location4 from "@/assets/images/location-4.png";
 
 export const ICONS = {
     phone,
+    email,
+    location,
     arrowUp,
     arrowUpWhite,
     arrowUpBlack,
