@@ -1,4 +1,6 @@
 import phone from "@/assets/icons/Phone.svg";
+import email from "@/assets/icons/email.svg";
+import location from "@/assets/icons/location.svg";
 import arrowUp from "@/assets/icons/arrow-up.svg";
 import arrowUpWhite from "@/assets/icons/arrow-up-white.svg";
 import arrowUpBlack from "@/assets/icons/arrowUp-black.svg";
@@ -7,6 +9,9 @@ import care from "@/assets/icons/care.svg";
 import leftDisabledArrow from "@/assets/icons/left-disabled-arrow.svg";
 import rightActiveArrow from "@/assets/icons/right--active-arrow.svg";
 import quotation from "@/assets/icons/quotation.svg";
+import nextActive from "@/assets/icons/next-active.svg";
+import previousDisabled from "@/assets/icons/previous-disabled.svg";
+import rightArrowOrange from "@/assets/icons/right-arrow-orange.svg";
 
 
 
@@ -58,8 +63,25 @@ import teamsimg from "@/assets/images/TeamsImg.png"
 import blackplus from "@/assets/icons/blackplus.svg"
 import blackminus from "@/assets/icons/blackminus.svg"
 
+
+// Blog page
+// Hero img
+import blogHEroImg from "@/assets/images/blog-hero-img.png";
+
+
+import servicesHeroImg from "@/assets/images/services-hero.png";
+
+// Locations page
+import location1 from "@/assets/images/location-1.png";
+import location2 from "@/assets/images/location-2.png";
+import location3 from "@/assets/images/location-3.png";
+import location4 from "@/assets/images/location-4.png";
+
+
 export const ICONS = {
     phone,
+    email,
+    location,
     arrowUp,
     arrowUpWhite,
     arrowUpBlack,
@@ -68,6 +90,9 @@ export const ICONS = {
     leftDisabledArrow,
     rightActiveArrow,
     quotation,
+    nextActive,
+    previousDisabled,
+    rightArrowOrange,
     openinvertedcomma,
     closedinvertedcomma,
     blackplus,
@@ -97,6 +122,12 @@ export const IMAGES = {
     blog3,
     newsletter,
     profileImg,
+    blogHEroImg,
+    servicesHeroImg,
+    location1,
+    location2,
+    location3,
+    location4,
     aboutushero,
     journey,
     teamsimg,

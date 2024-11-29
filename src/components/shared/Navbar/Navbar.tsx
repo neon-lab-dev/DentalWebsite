@@ -11,15 +11,18 @@ import { navlinks } from "./navlinks";
 const Navbar = () => {
   
   const pathname = usePathname();
+  console.log(pathname);
 
   return (
     <Container>
     <div className="flex items-center justify-between pt-[46px]">
+      <Link href={"/"}>
       <Image
         src={IMAGES.dentistClinicLogo}
         alt="dentist-clinic"
         className="w-[151px]"
       />
+      </Link>
 
       <div className="flex items-center gap-6">
         {navlinks.map((link) => (
@@ -27,7 +30,7 @@ const Navbar = () => {
             key={link.label}
             href={link.path}
             className={`text-neutral-10 font-Poppins text-xl ${
-              pathname === link.label ? "bg-secondary-10 px-5 py-2" : ""
+              pathname === link.path ? "bg-secondary-10 px-5 py-2 rounded-[32px]" : ""
             }`}
           >
             {link.label}
