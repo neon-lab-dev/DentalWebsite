@@ -6,7 +6,7 @@ type THeading = {
   classNames?: string;
   aligned: string;
   headingWidth?: string | number;
-  isHeadingCenter : boolean;
+  isHeadingCenter: boolean;
 };
 
 const Heading: React.FC<THeading> = ({
@@ -18,18 +18,21 @@ const Heading: React.FC<THeading> = ({
   isHeadingCenter,
 }) => {
   return (
-    <div className={`flex flex-col ${isHeadingCenter ? "items-center" : "items-start"}  gap-8 ${classNames}`}>
-      {
-        subHeading &&
+    <div
+      className={`flex flex-col ${
+        isHeadingCenter ? "items-center" : "items-start"
+      }  gap-8 ${classNames}`}
+    >
+      {subHeading && (
         <div className="px-5 py-[10px] text-neutral-10 flex items-center justify-center rounded-[49px] border border-neutral-10 w-fit">
-        {subHeading}
-      </div>
-      }
+          {subHeading}
+        </div>
+      )}
 
       <h1
-        className={`text-neutral-15 font-Amiri text-[48px] font-bold leading-[66px] ${headingWidth} ${aligned === "Center" ? "mx-auto" : "mx-0"} w-full ${
-          aligned === "Center" ? "text-center" : "text-start"
-        }`}
+        className={`text-neutral-15 font-Amiri text-[48px] font-bold leading-[66px] ${headingWidth} ${
+          aligned === "Center" ? "mx-auto" : "mx-0"
+        } w-full ${aligned === "Center" ? "text-center" : "text-start"}`}
       >
         {children}
       </h1>
