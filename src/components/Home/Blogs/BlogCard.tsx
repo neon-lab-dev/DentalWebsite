@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ICONS } from "@/assets";
 import Button from "@/components/Buttons/Button";
 import Image from "next/image";
 
-const BlogCard = ({blog}) => {
+const BlogCard = ({blog}:{blog:any}) => {
   return (
     <div>
       <Image

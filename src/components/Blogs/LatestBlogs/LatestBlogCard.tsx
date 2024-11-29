@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Button from "@/components/Buttons/Button";
 import Image from "next/image";
 
-const LatestBlogCard = ({blog}) => {
+const LatestBlogCard = ({blog}:{blog:any}) => {
   return (
     <div className="shadow-md rounded-3xl">
       <Image

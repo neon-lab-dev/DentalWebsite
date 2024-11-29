@@ -7,8 +7,7 @@ const Teams = () => {
     <div className="flex flex-col items-center gap-[89px] mx-[120px] my-[106px]">
       <div className="flex flex-col gap-8 w-[1276px]">
         <Heading
-            subHeading={""}
-            isSubheading={false}
+          subHeading={""}
           classNames={""}
           aligned={"Center"}
           headingWidth={"w-full"}

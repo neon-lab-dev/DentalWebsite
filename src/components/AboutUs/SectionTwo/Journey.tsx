@@ -16,16 +16,16 @@ const Journey = () => {
       </div>
       <div className="flex flex-col justify-center">
         <div>
-        <Heading 
+          <Heading
             subHeading={""}
-            isSubheading={false}
-          classNames={""}
-          aligned={"left"}
-          headingWidth={"w-full"}
-          isHeadingCenter={true}
-        >
-         A Journey of <span className="text-primary-10"> Care</span> and <span className="text-primary-10"> Excellence</span>
-        </Heading>
+            classNames={""}
+            aligned={"left"}
+            headingWidth={"w-full"}
+            isHeadingCenter={true}
+          >
+            A Journey of <span className="text-primary-10"> Care</span> and{" "}
+            <span className="text-primary-10"> Excellence</span>
+          </Heading>
 
           <p className="text-neutral-10 font-Poppins text-xl max-w-[893px] w-full flex-1 mt-8">
             Founded with a commitment to compassionate care and advanced
