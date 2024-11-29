@@ -44,6 +44,7 @@ const BlogHero = () => {
           </h1>
 
           {/* Swiper Slider */}
+          <div className="w-[500px]">
           <Swiper
             className="overflow-hidden"
             modules={[Navigation]}
@@ -61,6 +62,10 @@ const BlogHero = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+          </div>
+
+
+          
 
           {/* Navigation Buttons */}
           <div className="flex items-center gap-8 mt-[60px] relative z-10">

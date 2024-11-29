@@ -16,11 +16,13 @@ const Navbar = () => {
   return (
     <Container>
     <div className="flex items-center justify-between pt-[46px]">
+      <Link href={"/"}>
       <Image
         src={IMAGES.dentistClinicLogo}
         alt="dentist-clinic"
         className="w-[151px]"
       />
+      </Link>
 
       <div className="flex items-center gap-6">
         {navlinks.map((link) => (

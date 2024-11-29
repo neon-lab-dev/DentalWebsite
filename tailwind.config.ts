@@ -31,7 +31,9 @@ export default {
       backgroundImage: {
         'primary-gradient': 'linear-gradient(180deg, #FF7F50 0%, #F07F38 90.13%)',
         'orange-gradient' : 'linear-gradient(180deg, rgba(255, 127, 80, 0.00) 0%, #D04B1A 100%)',
-        'gradient-black' : 'linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)'
+        'gradient-black' : 'linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)',
+        'services-hero-gradient' : "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)",
+        'convenient-dental-care' : 'linear-gradient(0deg, rgba(51, 14, 0, 0.70) 0%, rgba(51, 14, 0, 0.70) 100%)'
       },
     },
   },

@@ -9,6 +9,7 @@ import rightActiveArrow from "@/assets/icons/right--active-arrow.svg";
 import quotation from "@/assets/icons/quotation.svg";
 import nextActive from "@/assets/icons/next-active.svg";
 import previousDisabled from "@/assets/icons/previous-disabled.svg";
+import rightArrowOrange from "@/assets/icons/right-arrow-orange.svg";
 
 
 
@@ -56,6 +57,16 @@ import profileImg from "@/assets/images/profileImg (2).png";
 // Hero img
 import blogHEroImg from "@/assets/images/blog-hero-img.png";
 
+
+import servicesHeroImg from "@/assets/images/services-hero.png";
+
+// Locations page
+import location1 from "@/assets/images/location-1.png";
+import location2 from "@/assets/images/location-2.png";
+import location3 from "@/assets/images/location-3.png";
+import location4 from "@/assets/images/location-4.png";
+
+
 export const ICONS = {
     phone,
     arrowUp,
@@ -68,6 +79,7 @@ export const ICONS = {
     quotation,
     nextActive,
     previousDisabled,
+    rightArrowOrange,
 };
 
 export const IMAGES = {
@@ -94,4 +106,9 @@ export const IMAGES = {
     newsletter,
     profileImg,
     blogHEroImg,
+    servicesHeroImg,
+    location1,
+    location2,
+    location3,
+    location4,
 }
