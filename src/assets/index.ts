@@ -54,6 +54,15 @@ import blog3 from "@/assets/images/blog3.png";
 import newsletter from "@/assets/images/newsletter.png";
 import profileImg from "@/assets/images/profileImg (2).png";
 
+//About Us Page
+import aboutushero from "@/assets/images/aboutushero.png"
+import journey from "@/assets/images/journey.png"
+import openinvertedcomma from "@/assets/icons/open-inverted-come.svg"
+import closedinvertedcomma from "@/assets/icons/closed-inverted-comma.svg"
+import teamsimg from "@/assets/images/TeamsImg.png"
+import blackplus from "@/assets/icons/blackplus.svg"
+import blackminus from "@/assets/icons/blackminus.svg"
+
 
 // Blog page
 // Hero img
@@ -84,6 +93,10 @@ export const ICONS = {
     nextActive,
     previousDisabled,
     rightArrowOrange,
+    openinvertedcomma,
+    closedinvertedcomma,
+    blackplus,
+    blackminus
 };
 
 export const IMAGES = {
@@ -115,4 +128,7 @@ export const IMAGES = {
     location2,
     location3,
     location4,
+    aboutushero,
+    journey,
+    teamsimg,
 }

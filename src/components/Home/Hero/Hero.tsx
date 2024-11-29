@@ -17,10 +17,7 @@ const Hero = () => {
         </p>
       </div>
       <div className="flex items-center justify-center gap-6">
-        <Button
-          variant="Gradient"
-          classNames="px-[50px] py-[22px]"
-        >
+        <Button variant="Gradient" classNames="px-[50px] py-[22px]">
           Schedule An Appointment!
         </Button>
         <button className="p-6 rounded-full bg-secondary-10">

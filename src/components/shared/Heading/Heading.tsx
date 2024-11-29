@@ -6,7 +6,7 @@ type THeading = {
   classNames?: string;
   aligned: string;
   headingWidth?: string | number;
-  isHeadingCenter : boolean;
+  isHeadingCenter: boolean;
 };
 
 const Heading: React.FC<THeading> = ({
@@ -27,9 +27,9 @@ const Heading: React.FC<THeading> = ({
       }
 
       <h1
-        className={`text-neutral-15 font-Amiri text-[48px] font-bold leading-[66px] ${headingWidth} ${aligned === "Center" ? "mx-auto" : "mx-0"} w-full ${
-          aligned === "Center" ? "text-center" : "text-start"
-        }`}
+        className={`text-neutral-15 font-Amiri text-[48px] font-bold leading-[66px] ${headingWidth} ${
+          aligned === "Center" ? "mx-auto" : "mx-0"
+        } w-full ${aligned === "Center" ? "text-center" : "text-start"}`}
       >
         {children}
       </h1>

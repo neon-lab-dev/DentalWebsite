@@ -13,6 +13,7 @@ const OurServices = () => {
         <div className="flex-1">
           <Heading
             subHeading={"OUR SERVICES"}
+            isSubheading={true}
             classNames={""}
             aligned={"Left"}
             headingWidth={"max-w-[500px] 2xl:max-w-[656px]"}

@@ -38,6 +38,7 @@ const Blogs = () => {
     <div>
       <Heading
         subHeading={"BLOGS"}
+        isSubheading={true}
         classNames={""}
         aligned={"Center"}
         headingWidth={""}

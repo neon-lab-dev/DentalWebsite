@@ -69,6 +69,7 @@ const Testimonials = () => {
         <div>
           <Heading
             subHeading={"TESTIMONIALS"}
+           
             classNames={""}
             aligned={"Left"}
             headingWidth={""}
