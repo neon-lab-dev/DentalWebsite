@@ -8,6 +8,8 @@ import Testimonials from "@/components/Home/Testimonials/Testimonials";
 import WhyUs from "@/components/Home/WhyUs/WhyUs";
 import Container from "@/components/shared/Container/Container";
 
+
+
 export default function Home() {
   return (
     <div>
@@ -28,5 +30,6 @@ export default function Home() {
         </div>
       </Container>
     </div>
+   
   );
 }

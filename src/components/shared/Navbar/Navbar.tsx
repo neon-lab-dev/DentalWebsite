@@ -36,10 +36,11 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center gap-6">
+        <Link href={"/signup"}>
         <Button variant="Outlined" classNames="">
           Book Now!
         </Button>
-
+        </Link>
         <Link href={"/login"}>
         <Button variant="Filled" classNames="">
           Sign in
