@@ -1,6 +1,7 @@
 import Button from "@/components/Buttons/Button";
 import Heading from "@/components/shared/Heading/Heading";
 import ImageGallary from "./ImageGallary";
+import Link from "next/link";
 
 const LocationsHero = () => {
   return (
@@ -19,12 +20,14 @@ const LocationsHero = () => {
         Our experienced team is dedicated to helping you achieve a healthy,
         confident smile in a comfortable environment.
       </p>
-      <Button
+     <Link href={'/locations/schedule-appointment'}>
+     <Button
         variant="Gradient"
         classNames={`px-[50px] py-[22px] w-fit mt-[60px]`}
       >
         Schedule An Appointment!
       </Button>
+     </Link>
     </div>
     <div className="w-[50%]">
     <ImageGallary/>

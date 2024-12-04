@@ -15,7 +15,7 @@ const ConvenientDentalCareCard = ({details}:{details:any}) => {
                 className="w-full max-w-[824px] max-h-[600px] object-cover"
             />
 
-            {/* Text */}
+            {/* Text */} 
             <div
                 className="absolute top-[42%] transform group-hover:translate-y-[-10%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-start justify-center flex-col p-12">
                 <h1 className="text-white capitalize text-[48px] font-bold leading-normal 2xl:leading-[66px] font-Amiri">

@@ -1,14 +1,14 @@
-import Heading from "@/components/shared/Heading/Heading";
-import ConvenientDentalCareCard from "./ConvenientDentalCareCard";
+import React from 'react'
 import { IMAGES } from "@/assets";
+import LocationCard from './LocationCard';
 
-const ConvenientDentalCare = () => {
+const LocationData = () => {
     const convenientDentalCareDetails= [
         {
             _id : "124343423123443",
             img : IMAGES.location1,
             name : "New York City",
-            numberOfClinic : '12 Clinics'
+            numberOfClinic : '12 Clinics' 
         },
         {
             _id : "12434356424123443",
@@ -30,16 +30,12 @@ const ConvenientDentalCare = () => {
         },
     ]
   return (
-    <div className="mt-[120px]">
-      <Heading aligned={"Center"} isHeadingCenter={true}>
-        Convenient {" "}
-        <span className="text-primary-10">Dental Care</span> Near You
-      </Heading>
+    <div >
 
-      <div className="grid grid-cols-2 gap-8 mt-12">
+      <div className="flex justify-around gap-8">
         {
             convenientDentalCareDetails.map((details) => (
-              <ConvenientDentalCareCard key={details._id} details={details} />
+              <LocationCard key={details._id} details={details} />
             ))
         }
       </div>
@@ -47,4 +43,5 @@ const ConvenientDentalCare = () => {
   );
 };
 
-export default ConvenientDentalCare;
+
+export default LocationData

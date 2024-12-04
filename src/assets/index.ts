@@ -77,6 +77,8 @@ import location2 from "@/assets/images/location-2.png";
 import location3 from "@/assets/images/location-3.png";
 import location4 from "@/assets/images/location-4.png";
 
+//Appointment
+import rightblackarrow from"@/assets/icons/right-arrow-black.svg"
 
 export const ICONS = {
     phone,
@@ -96,7 +98,8 @@ export const ICONS = {
     openinvertedcomma,
     closedinvertedcomma,
     blackplus,
-    blackminus
+    blackminus,
+    rightblackarrow
 };
 
 export const IMAGES = {
