@@ -27,7 +27,9 @@ const SignUpPage = () => {
     cnfpassword: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -106,16 +108,24 @@ const SignUpPage = () => {
                 onChange={handleChange}
                 className="w-full"
               />
-             <InputField
-        id="example-select"
-        name="insurance"
-        label="Select an Option"
-        type="select" // Use 'select' type for dropdown
-        value={formData.insurance}
-        onChange={handleChange}
-        options={['-Select One-', 'ICICI Lombard', 'Bajaj Fincerv', 'Kotak Mahindra', 'TATA AIA', 'Bharti AXA', 'LIC']} // Array of options
-        className="w-full"
-      />
+              <InputField
+                id="example-select"
+                name="insurance"
+                label="Select an Insureance"
+                type="select" // Use 'select' type for dropdown
+                value={formData.insurance}
+                onChange={handleChange}
+                options={[
+                  "-Select One-",
+                  "ICICI Lombard",
+                  "Bajaj Fincerv",
+                  "Kotak Mahindra",
+                  "TATA AIA",
+                  "Bharti AXA",
+                  "LIC",
+                ]} // Array of options
+                className="w-full"
+              />
             </div>
             <div className="flex gap-8">
               <InputField

@@ -25,7 +25,7 @@ const Location = () => {
         <div className="py-12 font-bold text-[32px] font-Amiri">
          Select Date and Time
         </div>
-        <div>
+        <div className="w-full">
             <DateTimeSelector />
         </div>
       </div>

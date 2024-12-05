@@ -46,7 +46,7 @@ const DatePickerPage = () => {
         <div>
           <div className="flex flex-col gap-12 ">
             {/* Time Section */}
-            <div className=" bg-transparent p-4 grid grid-cols-3 gap-6">
+            <div className=" bg-transparent p-4 grid grid-cols-5 gap-6">
               {generateTimes().map((time) => (
                 <Button
                   key={time}
