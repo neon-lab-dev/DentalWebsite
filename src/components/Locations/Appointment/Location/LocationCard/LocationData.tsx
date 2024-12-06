@@ -28,7 +28,7 @@ const LocationData = () => {
             name : "Chicago",
             numberOfClinic : '12 Clinics'
         },
-    ]
+    ] 
   return (
     <div >
 

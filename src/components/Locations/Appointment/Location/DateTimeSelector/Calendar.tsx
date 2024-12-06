@@ -1,16 +1,19 @@
-import React from 'react'
-import DateTimePicker from "react-datetime";
+import React from "react";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { StaticDatePicker } from "@mui/x-date-pickers/StaticDatePicker";
 
 const Calendar = () => {
   return (
     <div>
-    <DateTimePicker
-            timeFormat={false}
-            input={false}
-            className="custom-datetime-picker bg-[#F5F5DC]  p-[41px] rounded-[28px] shadow-2xl"
-          />
+      <LocalizationProvider
+        dateAdapter={AdapterDayjs}
+        // onChange={handleDateChange}
+      >
+        <StaticDatePicker orientation="landscape" />
+      </LocalizationProvider>
     </div>
-  )
-}
+  );
+};
 
-export default Calendar
+export default Calendar;

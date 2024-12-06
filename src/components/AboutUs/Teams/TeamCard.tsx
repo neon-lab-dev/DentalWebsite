@@ -5,7 +5,7 @@ import React from 'react'
 const TeamCard = () => {
   return (
     <div >
-      <Image src={IMAGES.teamsimg} alt="Card Image" className="w-full h-full rounded-[32px] " />
+      <Image src={IMAGES.teamsimg} alt="Card Image" className=" rounded-[32px] " />
     </div>
   )
 }

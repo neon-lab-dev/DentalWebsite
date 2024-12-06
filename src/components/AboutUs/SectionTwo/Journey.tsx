@@ -5,20 +5,20 @@ import Button from "@/components/Buttons/Button";
 import Heading from "@/components/shared/Heading/Heading";
 const Journey = () => {
   return (
-    <div className="flex justify-center gap-[124px] mx-[120px] my-[128px]">
+    <div className="flex flex-col-reverse items-center  md:flex-row justify-center md:gap-[124px] gap-12 md:mx-[120px] md:my-[128px]">
       <div>
         {" "}
         <Image
           src={IMAGES.journey}
           alt="Journey image"
-          className={`w-full max-w-[500px] 2xl:max-w-[968px] object-cover rounded-3xl max-h-[824px] 2xl:max-h-[824px]`}
+          className={`rounded-3xl flex justify-center`}
         />
       </div>
-      <div className="flex flex-col justify-center">
-        <div>
+      <div className="flex flex-col  justify-center">
+        <div> 
           <Heading
             subHeading={""}
-            classNames={""}
+            classNames={" w-full "}
             aligned={"left"}
             headingWidth={"w-full"}
             isHeadingCenter={true}
@@ -36,7 +36,7 @@ const Journey = () => {
           </p>
         </div>
         <div className="mt-[60px]">
-          <Button variant="Outlined" classNames="px-[50px] py-4 w-fit">
+          <Button variant="Outlined" classNames="px-[50px] py-4 md:w-fit w-full">
             Learn More
             <Image src={ICONS.arrowUp} alt="arrow-up" className="size-[22px]" />
           </Button>

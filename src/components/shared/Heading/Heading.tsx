@@ -12,7 +12,7 @@ type THeading = {
 const Heading: React.FC<THeading> = ({
   subHeading,
   children,
-  classNames,
+  classNames, 
   aligned,
   headingWidth,
   isHeadingCenter,
@@ -30,7 +30,7 @@ const Heading: React.FC<THeading> = ({
       )}
 
       <h1
-        className={`text-neutral-15 font-Amiri text-[48px] font-bold leading-[66px] ${headingWidth} ${
+        className={`md:text-neutral-15 font-Amiri md:text-[48px] text-[32px] font-bold md:leading-[66px] leading-[40px] ${headingWidth} ${
           aligned === "Center" ? "mx-auto" : "mx-0"
         } w-full ${aligned === "Center" ? "text-center" : "text-start"}`}
       >

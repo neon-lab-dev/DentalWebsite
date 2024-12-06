@@ -24,7 +24,6 @@
   font-family: var(--primaryFont);
 }
 
-
 .font-poppins {
   font-family: var(--secondaryFont);
 }
@@ -65,4 +64,30 @@ body {
   }
 }
 
+/* calendar css  */
+.css-6mw38q-MuiTypography-root,
+.css-19yhe3r-MuiPickersToolbar-content,
+.css-a46k6t-MuiPickersToolbar-root-MuiDatePickerToolbar-root,
+.css-15fu35s-MuiDialogActions-root {
+  display: none !important;
+}
 
+.css-5wchs2-MuiDateCalendar-root {
+  box-shadow: 13.688px 5.133px 37.643px 17.11px rgba(150, 150, 150, 0.11);
+  width: 100%; 
+  height: 100%;
+}
+.css-1rwystm-MuiPickersLayout-root {
+  border-radius: 27.377px;
+  overflow: hidden;
+}
+.css-18jb465-MuiPickersLayout-contentWrapper {
+  background: var(--Secondary, #f5f5dc);
+ 
+
+}
+
+.css-4k4mmf-MuiButtonBase-root-MuiPickersDay-root.Mui-selected,
+.css-qct7wd-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background-color: #ff7f50 !important ;
+}

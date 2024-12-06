@@ -15,7 +15,7 @@ const Button: React.FC<TButton> = ({
   onClick,
 }) => {
   const baseClasses =
-    "border px-11 py-4 font-Poppins text-[22px] font-semibold rounded-[55px] flex items-center justify-center gap-3";
+    "border px-11 py-4 font-Poppins md:text-[22px] font-semibold rounded-[55px] flex items-center justify-center gap-3";
 
   const variantClasses = {
     Outlined: "border-[#FF7F50] bg-none text-[#FF7F50]",
