@@ -17,7 +17,7 @@ const ClinicCard = () => {
   return (
     <div>
       <div className="flex gap-8 mt-6">
-          {newCards.map((card) => (
+          {newCards.map((card) => ( 
             <div
               key={card.id}
               onClick={() => handleSubCardClick(card.id)}

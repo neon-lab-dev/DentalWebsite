@@ -91,3 +91,8 @@ body {
 .css-qct7wd-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
   background-color: #ff7f50 !important ;
 }
+.css-1rwystm-MuiPickersLayout-root,.css-1rl1vrc-MuiDayCalendar-header {
+  width: 100%;
+  height: 100vh;
+  min-height: 547px;
+}

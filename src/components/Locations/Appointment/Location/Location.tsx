@@ -1,6 +1,7 @@
 import React from "react";
 import LocationData from "./LocationCard/LocationData";
 import DateTimeSelector from "./DateTimeSelector/DateTimeSelector";
+import { LocationProvider } from "./LocationContext";
 
 const Location = () => {
   return (
@@ -17,16 +18,18 @@ const Location = () => {
           <div className="h-[16px] border border-[#FF7F50] rounded-[30px] py-[2px] px-32"></div>
         </div>
         <div className="py-12 font-bold text-[32px] font-Amiri">
-         Select Location
+          Select Location
         </div>
         <div>
+          <LocationProvider>
             <LocationData />
+          </LocationProvider>
         </div>
         <div className="py-12 font-bold text-[32px] font-Amiri">
-         Select Date and Time
+          Select Date and Time
         </div>
         <div className="w-full">
-            <DateTimeSelector />
+          <DateTimeSelector />
         </div>
       </div>
     </div>
