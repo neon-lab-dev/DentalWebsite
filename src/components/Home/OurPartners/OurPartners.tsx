@@ -33,19 +33,19 @@ const OurPartners = () => {
               key={index}
               src={partner}
               alt={`logo-${index + 1}`}
-              className="mr-[100px]"
+              className="mr-[100px]  "
             />
           ))}
         </Marquee>
 
         {/* Divider */}
         <hr className="border border-black w-full" />
-        <Button variant="Filled" classNames="px-[50px] py-4 w-fit mx-auto">
+        <Button variant="Filled" classNames=" flex justify-center text-xs sm:text-base md:text[20px] px-[50px] py-4 md:w-fit item-center w-full mx-auto">
           Learn More
           <Image
             src={ICONS.arrowUpWhite}
             alt="arrow-up"
-            className="size-[22px]"
+            className="md:size-[22px] sm:size-4 size-3"
           />
         </Button>
         </div>
