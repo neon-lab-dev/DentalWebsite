@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import "react-datetime/css/react-datetime.css";
-import moment from "moment";
 import Button from "@/components/Buttons/Button";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -15,9 +14,10 @@ const DatePickerPage = () => {
 
   const handleDateChange = (date: Dayjs | null) => {
     if (!date) return;
-    setSelectedDate(date.format("DD-MM-YYYY"));
+    const formattedDate = date.format("DD MMMM, YYYY");
+    setSelectedDate(formattedDate);
     setSelectedDateTime(null);
-    setSelectedTime(null); // Reset time when a new date is selected
+    setSelectedTime(null);
   };
 
   const handleTimeClick = (time: string) => {
@@ -29,7 +29,8 @@ const DatePickerPage = () => {
   const generateTimes = () => {
     const times = [];
     for (let hour = 9; hour <= 21; hour += 2) {
-      times.push(moment({ hour }).format("hh:mm A"));
+      const time = dayjs().set("hour", hour).set("minute", 0).format("hh:mm A");
+      times.push(time);
     }
     return times;
   };
@@ -38,12 +39,13 @@ const DatePickerPage = () => {
     <div className="flex w-full justify-center items-center bg-transparent">
       <div className="w-full bg-transparent flex justify-between">
         {/* Calendar Section */}
-        <div className="h-full">
+        <div className="flex-1">
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <StaticDatePicker
               orientation="landscape"
-              value={selectedDate ? dayjs(selectedDate, "DD-MM-YYYY") : null}
+              value={selectedDate ? dayjs(selectedDate, "DD MMMM, YYYY") : null}
               onChange={handleDateChange}
+              className="full-calendar"
             />
           </LocalizationProvider>
         </div>

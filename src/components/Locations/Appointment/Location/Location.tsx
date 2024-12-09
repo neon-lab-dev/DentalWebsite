@@ -10,12 +10,11 @@ const Location = () => {
         Schedule Your Appointment Today
       </div>
       <div className="flex flex-col items-center justify-center gap-12 py-12 px-[47px] rounded-[48px] w-[90%] bg-[#EBFAFF] border border-[#333] shadow-sm ">
-        <div className="flex justify-around gap-5">
-          {" "}
-          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] py-[2px] px-32"></div>{" "}
-          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] py-[2px] px-32"></div>
-          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] py-[2px] px-32"></div>
-          <div className="h-[16px] border border-[#FF7F50] rounded-[30px] py-[2px] px-32"></div>
+        <div className="flex justify-between gap-5 w-full">
+          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] flex-1"></div>
+          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] flex-1"></div>
+          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] flex-1"></div>
+          <div className="h-[16px] border border-[#FF7F50] rounded-[30px] flex-1"></div>
         </div>
         <div className="py-12 font-bold text-[32px] font-Amiri">
           Select Location

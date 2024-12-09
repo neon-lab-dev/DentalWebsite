@@ -42,13 +42,16 @@ const FinalBooking = () => {
         Schedule Your Appointment Today
       </div>
       <div className="flex flex-col items-center justify-center gap-12 py-12 px-[47px] rounded-[48px] w-[90%] bg-[#EBFAFF] border border-[#333] shadow-sm">
-        <div className="flex justify-around gap-5">
-          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] py-[2px] px-32"></div>
-          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] py-[2px] px-32"></div>
-          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] py-[2px] px-32"></div>
-          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] py-[2px] px-32"></div>
+        <div className="flex justify-between gap-5 w-full">
+          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] flex-1"></div>
+          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] flex-1"></div>
+          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] flex-1"></div>
+          <div className="h-[16px] bg-[#FF7F50] rounded-[30px] flex-1"></div>
         </div>
-        <div className="py-12 font-bold text-[32px] font-Amiri">Confirm Booking</div>
+
+        <div className="py-12 font-bold text-[32px] font-Amiri">
+          Confirm Booking
+        </div>
         <div className="w-full flex justify-between py-5 px-6 border border-[#333] rounded-2xl bg-[#F5F5DC] font-Poppins text-[32px]">
           <div>
             Appointment for <span className="font-bold">1 January, 2025</span>
@@ -77,7 +80,9 @@ const FinalBooking = () => {
             </div>
           </div>
         </div>
-        <div className="py-12 font-bold text-[32px] font-Amiri">Enter User Details</div>
+        <div className="py-12 font-bold text-[32px] font-Amiri">
+          Enter User Details
+        </div>
         <div className=" w-full flex flex-col gap-8">
           <div className="flex gap-8">
             <InputField
@@ -135,31 +140,28 @@ const FinalBooking = () => {
               className="w-full"
             />
             <InputField
-                id="example-select"
-                name="insurance"
-                label="Insurance Status"
-                type="select" // Use 'select' type for dropdown
-                value={formData.insurance}
-                onChange={handleChange}
-                options={[
-                  "-Select One-",
-                  "ICICI Lombard",
-                  "Bajaj Fincerv",
-                  "Kotak Mahindra",
-                  "TATA AIA",
-                  "Bharti AXA",
-                  "LIC",
-                ]} // Array of options
-                className="w-full"
-              />
+              id="example-select"
+              name="insurance"
+              label="Insurance Status"
+              type="select" // Use 'select' type for dropdown
+              value={formData.insurance}
+              onChange={handleChange}
+              options={[
+                "-Select One-",
+                "ICICI Lombard",
+                "Bajaj Fincerv",
+                "Kotak Mahindra",
+                "TATA AIA",
+                "Bharti AXA",
+                "LIC",
+              ]} // Array of options
+              className="w-full"
+            />
           </div>
         </div>
-        <Button
-            variant="Filled"
-            classNames="w-full flex justify-center  "
-          >
-            Continue Booking
-          </Button>
+        <Button variant="Filled" classNames="w-full flex justify-center  ">
+          Continue Booking
+        </Button>
       </div>
     </div>
   );
