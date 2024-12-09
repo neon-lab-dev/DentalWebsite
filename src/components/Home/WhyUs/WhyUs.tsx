@@ -28,10 +28,10 @@ const WhyUs = () => {
           headingWidth={"200px"}
           isHeadingCenter={false}
         >
-          <h1 className="max-w-[600px]">
+          <p className="max-w-[600px]">
             Why <span className="text-primary-10">Choose Us</span> for Your
             Dental Care?
-          </h1>
+          </p>
         </Heading>
         <p className="text-neutral-10 font-Poppins text-xs lg:text-xl sm:text-base max-w-[340px] sm:max-w-[881px] w-full">
           See how we’ve transformed smiles and improved lives through expert
