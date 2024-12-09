@@ -19,26 +19,21 @@ const WhyUs = () => {
     },
   ];
   return (
-    <div className="flex items-center gap-[100px]  2xl:gap-[175px]">
-      <Image
-        src={IMAGES.whyUs}
-        alt="why-us-img"
-        className="max-w-[500px] 2xl:max-w-[823px] rounded-3xl"
-      />
-      <div>
+    <div className="lg:flex flex flex-col lg:flex-row max-w-full items-center justify-between gap-20">
+      <div className="lg:order-2 flex flex-col lg:item-start lg:items-start">
         <Heading
           subHeading={"WHY US"}
-          classNames={""}
+          classNames={"max-w-[340px] sm:max-w-[881px] w-full"}
           aligned={"Left"}
-          // headingWidth={"200px"}
+          headingWidth={"200px"}
           isHeadingCenter={false}
         >
-          <h1 className="max-w-[600px]">
+          <p className="max-w-[600px]">
             Why <span className="text-primary-10">Choose Us</span> for Your
             Dental Care?
-          </h1>
+          </p>
         </Heading>
-        <p className="text-neutral-10 font-Poppins text-xl max-w-[881px] w-full">
+        <p className="text-neutral-10 font-Poppins text-xs lg:text-xl sm:text-base max-w-[340px] sm:max-w-[881px] w-full">
           See how we’ve transformed smiles and improved lives through expert
           dental care. Read testimonials from patients who trust us with their
           oral health.
@@ -50,6 +45,12 @@ const WhyUs = () => {
           ))}
         </div>
       </div>
+      <Image
+        src={IMAGES.whyUs}
+        alt="why-us-img"
+        className={`w-full  2xl:max-w-[824px] object-cover lg:order-1 rounded-3xl 2xl:max-h-[831px]`}
+      />
+      
     </div>
   );
 };

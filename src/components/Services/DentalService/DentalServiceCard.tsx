@@ -6,13 +6,15 @@ interface DentalServiceCardProps {
   title: string;
   content: string;
   isFullWidth?: boolean;
+  isBtnVisible?: boolean;
 }
 
 const DentalServiceCard: React.FC<DentalServiceCardProps> = ({
   img,
   title,
   content,
-  isFullWidth = false,
+  isFullWidth=false,
+  isBtnVisible = false,
 }) => {
   return (
     <div
@@ -27,7 +29,7 @@ const DentalServiceCard: React.FC<DentalServiceCardProps> = ({
         alt="Dental service"
         className={`${
           isFullWidth
-            ? "w-full md:w-1/2 object-cover h-full rounded-l-3xl"
+            ? "w-full md:w-1/2 object-cover h-full rounded-t-3xl"
             : "w-full object-cover rounded-t-3xl h-[270px]"
         }`}
       />
@@ -38,18 +40,21 @@ const DentalServiceCard: React.FC<DentalServiceCardProps> = ({
             : "flex flex-col p-6 2xl:p-12"
         }`}
       >
-        <h1 className="text-black font-Amiri text-[32px] font-bold leading-[48px]">
+        <h1 className="text-black font-Amiri lg:text-[48px] sm:text-[32px] text-2xl font-bold lg:leading-[48px] sm:leading-8 leading-7">
           {title}
         </h1>
-        <p className="text-neutral-10 font-Poppins text-xl mt-4">{content}</p>
+        <p className="text-neutral-10 font-Poppins md:text-xl sm:text-base text-xs  mt-4">{content}</p>
         <Button
           variant="Gradient"
-          classNames={`px-[50px] py-[22px] w-fit mt-12 ${
+          classNames={`${isBtnVisible?"":"hidden md:flex"} md:px-[50px] md:py-[22px] md:px-[36px] sm:py-[16px] px-[28px] py-[14px] w-fit mt-12 ${
             isFullWidth ? "self-start" : ""
           }`}
         >
-          Schedule An Appointment!
+          <p className="md:text-[22px] sm:text-[18px] text-base">Schedule An Appointment!</p>
         </Button>
+
+
+       
       </div>
     </div>
   );

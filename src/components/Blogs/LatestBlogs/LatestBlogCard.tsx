@@ -2,7 +2,7 @@
 import Button from "@/components/Buttons/Button";
 import Image from "next/image";
 
-const LatestBlogCard = ({blog}:{blog:any}) => {
+const LatestBlogCard = ({ blog }: { blog: any }) => {
   return (
     <div className="shadow-md rounded-3xl">
       <Image
@@ -11,13 +11,18 @@ const LatestBlogCard = ({blog}:{blog:any}) => {
         className={`w-full object-cover rounded-t-3xl h-[270px]`}
       />
       <div className="flex flex-col p-6">
-        <h1 className="text-black font-Amiri text-[32px] font-bold leading-[48px]">{blog.title}</h1>
-      <p className="text-neutral-10 font-Poppins text-xl mt-[15px]">
-      {blog.content}
-      </p>
-      <Button variant="Outlined" classNames="px-[50px] py-[22px] w-fit mt-6">
-        Read More
-      </Button>
+        <h1 className="text-black text-[32px] font-bold lg:leading-[40px] sm:leading-[30px] leading-[22px] font-Amiri text-xl sm:text-[28px] lg:text[32px]">
+          {blog.title}
+        </h1>
+        <p className="text-neutral-10 font-Poppins text-xs lg:text-xl sm:text-base mt-[15px]">
+          {blog.content}
+        </p>
+        <Button
+          variant="Outlined"
+          classNames="px-2 sm:py-4  mt-[30px] text-center flex justify-center w-full md:w-[260px] 2xl:mt-[56px] text-xs sm:text-base md:text[20px]  "
+        >
+          Read More
+        </Button>
       </div>
     </div>
   );
