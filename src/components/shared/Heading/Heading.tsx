@@ -7,7 +7,6 @@ type THeading = {
   aligned: string;
   headingWidth?: string | number;
   isHeadingCenter: boolean;
-  isHeadingCenterSmallScreen?:boolean
 };
 
 const Heading: React.FC<THeading> = ({
@@ -17,7 +16,6 @@ const Heading: React.FC<THeading> = ({
   aligned,
   headingWidth,
   isHeadingCenter,
-  isHeadingCenterSmallScreen,
 }) => {
   return (
     <div
