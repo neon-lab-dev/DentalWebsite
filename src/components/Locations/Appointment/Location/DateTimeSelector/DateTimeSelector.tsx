@@ -36,8 +36,8 @@ const DatePickerPage = () => {
   };
 
   return (
-    <div className="flex w-full justify-center items-center bg-transparent">
-      <div className="w-full bg-transparent flex justify-between">
+    <div className="flex  w-full justify-center items-center bg-transparent">
+      <div className="w-full bg-transparent flex xl:flex-row flex-col gap-6 md:gap-8 justify-between">
         {/* Calendar Section */}
         <div className="flex-1">
           <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -50,15 +50,15 @@ const DatePickerPage = () => {
           </LocalizationProvider>
         </div>
         <div>
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-12 ">
             {/* Time Section */}
-            <div className="bg-transparent p-4 grid grid-cols-5 gap-6">
+            <div className="bg-transparent p-4 grid xl:grid-cols-5 grid-cols-3 gap-6">
               {generateTimes().map((time) => (
                 <Button
                   key={time}
                   onClick={() => handleTimeClick(time)}
                   variant={selectedTime === time ? "Filled" : "Outlined"}
-                  classNames="font-Poppins text-[24px] font-normal"
+                  classNames="font-Poppins md:text-[24px] text-[12px] font-normal px-6 py-3 rouded-[52px] "
                 >
                   {time}
                 </Button>
@@ -66,7 +66,7 @@ const DatePickerPage = () => {
             </div>
             {/* Display Selected Date-Time */}
             <div>
-              <p className="py-5 px-6 border border-[#333] rounded-2xl bg-[#F5F5DC] font-Poppins text-[32px]">
+              <p className="xl:py-5 xl:px-6 p-4 border border-[#333] rounded-2xl bg-[#F5F5DC] font-Poppins xl:text-[32px] md:text-[16px] text-[12px]">
                 {selectedDateTime || "No date and time selected"}
               </p>
             </div>
@@ -74,7 +74,7 @@ const DatePickerPage = () => {
 
           <Button
             variant="Filled"
-            classNames="w-full flex justify-center mt-[176px]"
+            classNames="w-full flex justify-center xl:mt-[176px] md:mt-[54px] mt-12 px-[28px] py-[14px] "
           >
             Continue
           </Button>

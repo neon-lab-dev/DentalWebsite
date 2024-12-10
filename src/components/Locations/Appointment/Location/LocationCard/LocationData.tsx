@@ -15,7 +15,7 @@ const LocationData = () => {
       numberOfClinic: '12 Clinics'
     },
     {
-      _id: "12434356424123443",
+      _id: "12434356424123443", 
       img: IMAGES.location2,
       name: "Los Angeles",
       numberOfClinic: '12 Clinics'
@@ -44,7 +44,7 @@ const LocationData = () => {
 
   return (
     <div>
-      <div className="flex justify-around gap-8">
+      <div className="xl:flex justify-around xl:gap-8 grid grid-cols-2 grid-rows-2 gap-5 ">
         {convenientDentalCareDetails.map((details) => (
           <LocationCard
             key={details._id}

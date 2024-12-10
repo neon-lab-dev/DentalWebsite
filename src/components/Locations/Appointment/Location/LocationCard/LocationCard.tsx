@@ -24,7 +24,7 @@ const LocationCard = ({ details, onMainCardClick, isMainCardSelected }: Location
           <Image
             src={details.img}
             alt="animated_card"
-            className="w-[372px] h-[258px] object-cover"
+            className="xl:w-[372px] md:w-[282px] w-[156px] xl:h-[258px] md:h-[196px] h-[106px] object-cover"
           />
 
           {isMainCardSelected && (
@@ -42,7 +42,7 @@ const LocationCard = ({ details, onMainCardClick, isMainCardSelected }: Location
             </p>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };

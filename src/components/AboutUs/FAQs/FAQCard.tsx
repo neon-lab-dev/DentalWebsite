@@ -9,24 +9,24 @@ const FAQCard = () => {
   const handleToggle = () => {
     setIsExpanded(!isExpanded);
   };
-
+ 
   return (
     <div
-      className={`relative  md:w-full md:rounded-[32px] rounded-2xl flex justify-between transition-all duration-300 ease-in-out md:px-12 p-4 py-4 md:py-[58px] border border-[#00000040]  self-stretch  ${
+      className={`relative  md:w-full md:rounded-[32px] rounded-2xl flex justify-between transition-all duration-300 ease-in-out md:px-12 p-4 md:p-8 py-4 md:py-[58px] border border-[#00000040]  self-stretch  ${
         isExpanded
-          ? "md:h-[200px]  md:w-full  p-4 w-full md:bg-white flex-col justify-center border border-orange-500 "
-          : "md:h-[178px] h-16  items-center md:w-full"
+          ? "xl:h-[200px] md:h-[228px]  md:w-full  p-4 md:p-8 w-full md:bg-white flex-col justify-center  border border-orange-500 "
+          : "xl:h-[178px] md:h-[112px] h-16  items-center md:w-full"
       }`}
     >
       <div className="flex justify-between">
         <div>
-          <div className="font-Amiri md:text-5xl text-2xl font-bold md:leading-[62px] leading-9">
+          <div className="font-Amiri md:text-4xl xl:text-5xl text-2xl font-bold md:leading-[44px] xl:leading-[62px] leading-9">
             Lorem ipsum dior sit. ispel
           </div>
-
-          <div className="flex flex-col flex-grow">
+ 
+          <div className="flex flex-col flex-grow  ">
             {isExpanded && (
-              <div className="md:mt-4  md:text-xl text-[12px] font-Poppins md:w-[1180px]">
+              <div className="md:mt-6 md:mb-8 xl:mt-4  xl:text-xl md:text-[16px] text-[12px] font-Poppins xl:w-[1180px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 dapibus sodales felis. Suspendisse non bibendum velit.
                 Vestibulum sed maximus orci. Nunc odio mauris, tincidunt sit
@@ -37,7 +37,7 @@ const FAQCard = () => {
         </div>
         <button
           onClick={handleToggle}
-          className="absolute md:bottom-12 md:right-12 flex flex-col items-center right-1 md:size-[82px] size-8 "
+          className="absolute xl:bottom-12 xl:right-12 flex flex-col items-center right-1 md:right-12  xl:size-[82px] md:size-[48px] size-8 "
         >
           <Image
             src={isExpanded ? ICONS.blackminus : ICONS.blackplus}

@@ -7,7 +7,7 @@ import Teams from "@/components/AboutUs/Teams/Teams"
 
 const AboutUs = () => {
   return (
-    <div className="flex flex-col gap-[50px] py-5 px-4">
+    <div className="flex flex-col gap-[50px] py-5 px-4 sm:px-12">
       <AboutUsHero />
       <Journey />
       <Statement />
@@ -17,4 +17,4 @@ const AboutUs = () => {
   )
 }
  
-export default AboutUs
+export default AboutUs 

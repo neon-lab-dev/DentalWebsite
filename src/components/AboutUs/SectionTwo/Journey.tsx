@@ -5,8 +5,8 @@ import Button from "@/components/Buttons/Button";
 import Heading from "@/components/shared/Heading/Heading";
 const Journey = () => {
   return (
-    <div className="flex flex-col-reverse items-center  md:flex-row justify-center md:gap-[124px] gap-12 md:mx-[120px] md:my-[128px]">
-      <div>
+    <div className="flex flex-col-reverse items-center  xl:flex-row justify-center xl:gap-[124px] gap-12 xl:mx-[120px] xl:my-[128px]">
+      <div className="md:mt-[60px] mt-12">
         {" "}
         <Image
           src={IMAGES.journey}
@@ -19,7 +19,7 @@ const Journey = () => {
           <Heading
             subHeading={""}
             classNames={" w-full "}
-            aligned={"left"}
+            aligned={"left"} 
             headingWidth={"w-full"}
             isHeadingCenter={true}
           >
@@ -27,7 +27,7 @@ const Journey = () => {
             <span className="text-primary-10"> Excellence</span>
           </Heading>
 
-          <p className="text-neutral-10 font-Poppins text-xl max-w-[893px] w-full flex-1 mt-8">
+          <p className="text-neutral-10 font-Poppins text-xl md:text-[16px] lg:text-[22px] max-w-[893px] w-full flex-1 xl:mt-8 md:mt-5 mt-4">
             Founded with a commitment to compassionate care and advanced
             dentistry, [Your Dental Practice Name] has been transforming smiles
             and building lasting patient relationships from day one. Our story
@@ -35,8 +35,8 @@ const Journey = () => {
             patient feel valued.
           </p>
         </div>
-        <div className="mt-[60px]">
-          <Button variant="Outlined" classNames="px-[50px] py-4 md:w-fit w-full">
+        <div className="lg:mt-[60px] md:mt-12 mt-8">
+          <Button variant="Outlined" classNames="px-[50px] py-4 xl:w-fit w-full">
             Learn More
             <Image src={ICONS.arrowUp} alt="arrow-up" className="size-[22px]" />
           </Button>

@@ -16,8 +16,8 @@ const ClinicCard = () => {
       };
   return (
     <div>
-      <div className="flex gap-8 mt-6">
-          {newCards.map((card) => ( 
+      <div className="flex xl:flex-row flex-col xl:gap-8 gap-5 mt-6">
+          {newCards.map((card) => (  
             <div
               key={card.id}
               onClick={() => handleSubCardClick(card.id)}
@@ -25,12 +25,12 @@ const ClinicCard = () => {
                 selectedSubCard === card.id ? "bg-[#FF7F50]" : "bg-[#F5F5DC]"
               }`}
             >
-              <div className="w-full h-full px-8 py-6">
-                <h1 className="text-black capitalize text-[32px] font-bold leading-normal 2xl:leading-[66px] font-Amiri">
+              <div className="w-full h-full xl:px-8 xl:py-6 md:p-5 p-4">
+                <h1 className="text-black capitalize xl:text-[32px] md:text-[32px] text-[16px] font-bold  xl:leading-[66px] md:leading-[30px] leading-6 font-Amiri">
                   {card.name}
                 </h1>
-                <div className="h-[2px] bg-[#FF7F50] self-stretch"></div>
-                <div className="font-Poppins text-xl">
+                <div className="h-[2px] bg-[#FF7F50] self-stretch my-[10px]"></div>
+                <div className="font-Poppins xl:text-xl md:text-[16px] text-[12px] ">
                   444 North Orleans Chicago, IL 60654-5602
                 </div>
               </div>
