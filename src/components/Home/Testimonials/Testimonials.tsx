@@ -65,8 +65,8 @@ const Testimonials = () => {
   return (
     <div>
       {/* Heading Section */}
-      <div className="flex items-center gap-9">
-        <div>
+      <div className="flex items-center justify-between gap-2">
+        <div className="md:w-4/6">
           <Heading
             subHeading={"TESTIMONIALS"}
            
@@ -78,7 +78,7 @@ const Testimonials = () => {
             Real Stories from Our{" "}
             <span className="text-primary-10">Satisfied Patients</span>
           </Heading>
-          <p className="text-neutral-10 font-Poppins text-xl mt-8">
+          <p className="text-neutral-10 font-Poppins  text-xs lg:text-xl sm:text-base mt-8">
             See how we’ve transformed smiles and improved lives through expert
             dental care. Read testimonials from patients who trust us with their
             oral health.
@@ -86,21 +86,35 @@ const Testimonials = () => {
         </div>
 
         {/* Swiper Navigation Buttons */}
-        <div className="flex items-center gap-10">
+        <div className=" hidden md:flex  gap-10 justify-end">
           <Image
             id="prevButton"
             src={ICONS.leftDisabledArrow}
             alt="left-arrow"
-            className="size-[60px] cursor-pointer"
+            className="sm:size-[60px] size-12 cursor-pointer"
           />
           <Image
             id="nextButton"
             src={ICONS.rightActiveArrow}
             alt="right-arrow"
-            className="size-[60px] cursor-pointer"
+            className="sm:size-[60px] size-12 cursor-pointer"
           />
         </div>
       </div>
+      <div className="flex md:hidden items-center gap-10 mt-8">
+          <Image
+            id="prevButton"
+            src={ICONS.leftDisabledArrow}
+            alt="left-arrow"
+            className="sm:size-[60px] size-12  cursor-pointer"
+          />
+          <Image
+            id="nextButton"
+            src={ICONS.rightActiveArrow}
+            alt="right-arrow"
+            className="sm:size-[60px] size-12  cursor-pointer"
+          />
+        </div>
 
       {/* Testimonial Swiper */}
       <Swiper

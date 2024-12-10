@@ -3,6 +3,15 @@ import DentalServiceCard from "./DentalServiceCard";
 import { IMAGES } from "@/assets";
 
 const DentalService = () => {
+  const dentalServiceData1 = [
+    {
+      img: IMAGES.blog1,
+      title: "First Visit to Dentologie",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis feugiat ",
+      category : "Latest"
+    },
+   
+  ];
     const dentalServiceData = [
         {
           img: IMAGES.blog1,
@@ -36,7 +45,7 @@ const DentalService = () => {
       <Heading aligned={"Center"} isHeadingCenter={true}>
         Our Range of <span className="text-primary-10">Dental Services</span>
       </Heading>
-      <p className="text-neutral-10 font-Poppins text-xl max-w-[1058px] w-full mx-auto text-center flex-1 mt-8">
+      <p className="text-neutral-10 font-Poppins md:text-xl sm:text-base text-xs max-w-[1058px] w-full mx-auto text-center flex-1 mt-8">
         With state-of-the-art facilities and a caring team, our clinics are
         designed for your comfort and convenience. Find the nearest location and
         schedule your visit today.
@@ -47,13 +56,14 @@ const DentalService = () => {
 
       <div className="mt-[98px]">
         {/* Rendering the first card */}
-        {dentalServiceData.slice(0, 1).map((service, index) => (
+        {dentalServiceData1.slice(0, 1).map((service, index) => (
           <DentalServiceCard
             key={index}
             img={service.img}
             title={service.title}
             content={service.content}
             isFullWidth
+            isBtnVisible={true}
           />
         ))}
 
@@ -65,6 +75,7 @@ const DentalService = () => {
               img={service.img}
               title={service.title}
               content={service.content}
+              isBtnVisible={false}
             />
           ))}
         </div>
