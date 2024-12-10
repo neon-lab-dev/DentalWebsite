@@ -78,22 +78,22 @@ const LatestBlogs = () => {
   const tabButtons = ["Latest", "Hot", "Trending", "Popular"];
   return (
     <div className="mt-[120px]">
-      <h1 className="text-neutral-15 font-Amiri text-[48px] font-bold leading-[66px]">
+      <h1 className="text-neutral-15 font-Amiri text-4xl sm:text-[48px] 2xl:text-[64px] font-bold leading-[40px] sm:leading-[44px] 2xl:leading-[66px]">
         Discover Our Latest Dental Tips and Insights
       </h1>
-      <p className="text-neutral-10 font-Poppins text-xl max-w-[935px] mt-8">
+      <p className="text-neutral-10 font-Poppins md:text-xl sm:text-base text-xs max-w-[935px] mt-8">
         Check out our most recent blog posts for up-to-date advice on oral
         health, treatment options, and dental care best practices. Stay ahead
         with tips to keep your smile healthy and vibrant.
       </p>
 
-      <div className="flex items-center gap-5 mt-8">
+      <div className="sm:flex grid  grid-cols-3 items-center gap-5 mt-8">
         {tabButtons.map((btn, index) => (
           <Button
             onClick={() => setActiveTab(btn)}
             key={index}
             variant={btn === activeTab ? "Filled" : "Outlined"}
-            classNames="px-8 py-[10px] font-normal"
+            classNames="sm:px-8 flex justify-center px-[20px] py-2 sm:py-[10px] text-xs sm:text-base md:text-[20px] font-normal"
           >
             {btn}
           </Button>

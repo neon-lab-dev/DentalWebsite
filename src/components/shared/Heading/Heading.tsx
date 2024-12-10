@@ -20,19 +20,19 @@ const Heading: React.FC<THeading> = ({
   return (
     <div
       className={`flex flex-col ${
-        isHeadingCenter ? "items-center" : "items-start"
+        isHeadingCenter ? " items-center" : "items-start"
       }  gap-8 ${classNames}`}
     >
       {subHeading && (
-        <div className="px-5 py-[10px] text-neutral-10 flex items-center justify-center rounded-[49px] border border-neutral-10 w-fit">
+        <div className="md:px-5 md:py-[10px] sm:px-4 sm:py-2 px-[12px] py-[6px] text-xs sm:text-sm md:text-xl text-neutral-10 flex items-center justify-center rounded-[49px] border border-neutral-10 w-fit">
           {subHeading}
         </div>
       )}
 
       <h1
-        className={`md:text-neutral-15 font-Amiri xl:text-5xl md:text-4xl text-[32px] font-bold xl:leading-[66px] md:leading-[44px] leading-[40px] ${headingWidth} ${
+        className={`text-neutral-15 font-Amiri font-bold md:text-5xl sm:text-4xl text-[32px] md:leading-[66px] sm:leading-[44px] leading-[32px] ${headingWidth} ${
           aligned === "Center" ? "mx-auto" : "mx-0"
-        } w-full ${aligned === "Center" ? "text-center" : "text-start"}`}
+        } w-full ${aligned === "Center" ? " text-center" : "text-start"}`}
       >
         {children}
       </h1>

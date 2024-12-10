@@ -81,79 +81,79 @@ const Footer = () => {
   return (
     <Container>
       <div className="font-Amiri bg-secondary-10 rounded-3xl p-9 2xl:p-12 w-full mt-[160px] mb-[120px]">
-        <div className="grid grid-cols-4 w-full">
-        <div className="flex flex-col flex-1 gap-8 ">
-          <Image
-            src={IMAGES.dentistClinicLogo}
-            alt="dentist-clinic"
-            className="w-[151px]"
-          />
+        <div className="md:grid md:grid-cols-3 w-full flex flex-col gap-8">
+          <div className="flex flex-col justify-center items-center md:items-start flex-1 gap-8 ">
+            <Image
+              src={IMAGES.dentistClinicLogo}
+              alt="dentist-clinic"
+              className="md:w-[151px] sm:w-[130px] w-[110px]"
+            />
 
-          <h1 className="text-neutral-15 font-Amiri text-[32px] font-bold leading-normal 2xl:leading-[66px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </h1>
+            <h1 className="text-neutral-15 font-Amiri text-center md:text-start  text-base sm:text-[24px] md:text-[32px] font-bold leading-normal 2xl:leading-[66px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </h1>
 
-          <p className="text-neutral-10 font-Poppins text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
-            nunc sollicitudin nunc tempus efficitur. In hac habitasse platea
-            dictumst.
-          </p>
-        </div>
-
-        {/* <div className="flex justify-between w-full"> */}
-          <div className="flex items-start justify-center">
-            {footerLinks.map((item, index) => (
-              <div key={index} className="flex flex-col justify-center gap-8">
-                <h1 className="text-neutral-15 font-Amiri text-[32px] font-bold leading-[66px] ">
-                  {item.heading}
-                </h1>
-
-                <div className="flex flex-col gap-6">
-                  {item.links.map((link) => (
-                    <Link
-                      key={link.label}
-                      href={link.path}
-                      className="text-neutral-10 font-Poppins text-xl hover:underline"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ))}
+            <p className="text-neutral-10 font-Poppins text-xs sm:text-base text-center md:text-start md:text-xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
+              nunc sollicitudin nunc tempus efficitur. In hac habitasse platea
+              dictumst.
+            </p>
           </div>
 
-          <div className="flex items-start justify-center">
-            {services.map((item, index) => (
-              <div key={index} className="flex flex-col gap-8">
-                <h1 className="text-neutral-15 font-Amiri text-[32px] font-bold leading-[66px]">
-                  {item.heading}
-                </h1>
+          <div className="flex justify-between flex-1 w-full">
+            <div className="flex items-start justify-center ">
+              {footerLinks.map((item, index) => (
+                <div key={index} className="flex flex-col justify-center gap-4 md:gap-8">
+                  <h1 className="text-neutral-15 font-Amiri md:text-[32px] text-2xl font-bold md:leading-[48px] leading-[38px]  ">
+                    {item.heading}
+                  </h1>
 
-                <div className="flex flex-col gap-6">
-                  {item.links.map((link) => (
-                    <p
-                      key={link.label}
-                      className="text-neutral-10 font-Poppins text-xl"
-                    >
-                      {link.label}
-                    </p>
-                  ))}
+                  <div className="flex flex-col  gap-3 sm:gap-4 md:gap-6">
+                    {item.links.map((link) => (
+                      <Link
+                        key={link.label}
+                        href={link.path}
+                        className="text-neutral-10 font-Poppins md:text-xl sm:text-base text-sm hover:underline"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          <div className="flex items-start justify-center">
+            <div className="flex items-start justify-center">
+              {services.map((item, index) => (
+                <div key={index} className="flex flex-col gap-4 md:gap-8">
+                  <h1 className="text-neutral-15 font-Amiri md:text-[32px] text-2xl font-bold md:leading-[48px] leading-[38px]">
+                    {item.heading}
+                  </h1>
+
+                  <div className="flex flex-col  gap-3 sm:gap-4 md:gap-6">
+                    {item.links.map((link) => (
+                      <p
+                        key={link.label}
+                        className="text-neutral-10 font-Poppins md:text-xl sm:text-base text-sm hover:underline"
+                      >
+                        {link.label}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="sm:flex items-start justify-center flex-1  w-full">
             {contactInfo.map((info, index) => (
-              <div key={index} className="flex flex-col gap-8">
-                <h1 className="text-neutral-15 font-Amiri text-[32px] font-bold leading-[66px]">
+              <div key={index} className="flex flex-col items-center md:items-start gap-4 md:gap-8">
+                <h1 className="text-neutral-15 font-Amiri md:text-[32px] text-2xl font-bold md:leading-[48px] leading-[38px]">
                   {info.heading}
                 </h1>
 
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col w-full gap-6">
                   {info.links.map((link) => (
-                    <div key={link.label} className="flex items-center gap-4">
+                    <div key={link.label} className="flex items-center justify-center md:justify-start gap-4 ">
                       <Image
                         src={link.icon}
                         alt="dentist-clinic"
@@ -162,14 +162,14 @@ const Footer = () => {
                       {link.path ? (
                         <a
                           href={link.path}
-                          className="text-neutral-10 font-Poppins text-xl max-w-[230px] hover:underline"
+                          className="text-neutral-10 font-Poppins text-sm sm:text-base md:text-xl max-w-[230px] hover:underline"
                         >
                           {link.label}
                         </a>
                       ) : (
                         <p
                           key={link.label}
-                          className="text-neutral-10 font-Poppins text-xl max-w-[230px]"
+                          className="text-neutral-10 font-Poppins text-sm sm:text-base md:text-xl text-xl max-w-[230px]"
                         >
                           {link.label}
                         </p>
@@ -180,7 +180,7 @@ const Footer = () => {
               </div>
             ))}
           </div>
-        {/* </div> */}
+          {/* </div> */}
         </div>
       </div>
     </Container>

@@ -13,6 +13,6 @@ const ScheduleAppointment = () => {
       <FinalBooking />
     </div>
   );
-};
+}; 
 
 export default ScheduleAppointment;

@@ -13,7 +13,8 @@ import nextActive from "@/assets/icons/next-active.svg";
 import previousDisabled from "@/assets/icons/previous-disabled.svg";
 import rightArrowOrange from "@/assets/icons/right-arrow-orange.svg";
 
-
+// Nav bar
+import hamburger from "@/assets/icons/hamburger.svg"
 
 // Importing images
 
@@ -99,6 +100,7 @@ export const ICONS = {
     closedinvertedcomma,
     blackplus,
     blackminus,
+    hamburger,
     rightblackarrow
 };
 
