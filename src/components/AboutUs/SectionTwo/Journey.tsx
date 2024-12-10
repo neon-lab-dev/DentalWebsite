@@ -5,21 +5,21 @@ import Button from "@/components/Buttons/Button";
 import Heading from "@/components/shared/Heading/Heading";
 const Journey = () => {
   return (
-    <div className="flex justify-center gap-[124px] mx-[120px] my-[128px]">
-      <div>
+    <div className="flex flex-col-reverse items-center  xl:flex-row justify-center xl:gap-[124px] gap-12 xl:mx-[120px] xl:my-[128px]">
+      <div className="md:mt-[60px] mt-12">
         {" "}
         <Image
           src={IMAGES.journey}
           alt="Journey image"
-          className={`w-full max-w-[500px] 2xl:max-w-[968px] object-cover rounded-3xl max-h-[824px] 2xl:max-h-[824px]`}
+          className={`rounded-3xl flex justify-center`}
         />
       </div>
-      <div className="flex flex-col justify-center">
-        <div>
+      <div className="flex flex-col  justify-center">
+        <div> 
           <Heading
             subHeading={""}
-            classNames={""}
-            aligned={"left"}
+            classNames={" w-full "}
+            aligned={"left"} 
             headingWidth={"w-full"}
             isHeadingCenter={true}
           >
@@ -27,7 +27,7 @@ const Journey = () => {
             <span className="text-primary-10"> Excellence</span>
           </Heading>
 
-          <p className="text-neutral-10 font-Poppins text-xl max-w-[893px] w-full flex-1 mt-8">
+          <p className="text-neutral-10 font-Poppins text-xl md:text-[16px] lg:text-[22px] max-w-[893px] w-full flex-1 xl:mt-8 md:mt-5 mt-4">
             Founded with a commitment to compassionate care and advanced
             dentistry, [Your Dental Practice Name] has been transforming smiles
             and building lasting patient relationships from day one. Our story
@@ -35,8 +35,8 @@ const Journey = () => {
             patient feel valued.
           </p>
         </div>
-        <div className="mt-[60px]">
-          <Button variant="Outlined" classNames="px-[50px] py-4 w-fit">
+        <div className="lg:mt-[60px] md:mt-12 mt-8">
+          <Button variant="Outlined" classNames="px-[50px] py-4 xl:w-fit w-full">
             Learn More
             <Image src={ICONS.arrowUp} alt="arrow-up" className="size-[22px]" />
           </Button>

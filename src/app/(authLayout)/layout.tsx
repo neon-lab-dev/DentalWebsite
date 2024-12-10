@@ -12,7 +12,6 @@ const AuthLayout = ({children}:{children:ReactNode}) => {
     className="object-cover rounded-3xl"
     src={`/assets/images/LoginSignup.png`}
     alt="Login or Sign Up Page Image"
-    // layout="responsive"
     width={832}
     height={984}
   />

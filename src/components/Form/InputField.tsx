@@ -14,7 +14,7 @@ interface InputFieldProps {
 
 const InputField: React.FC<InputFieldProps> = ({
   type = 'text',
-  id,
+  id, 
   name,
   label,
   placeholder,

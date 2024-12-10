@@ -12,7 +12,7 @@ const ConvenientDentalCare = () => {
         },
         {
             _id : "12434356424123443",
-            img : IMAGES.location2,
+            img : IMAGES.location2, 
             name : "Los Angeles",
             numberOfClinic : '12 Clinics'
         },

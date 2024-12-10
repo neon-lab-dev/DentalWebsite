@@ -12,7 +12,7 @@ type THeading = {
 const Heading: React.FC<THeading> = ({
   subHeading,
   children,
-  classNames,
+  classNames, 
   aligned,
   headingWidth,
   isHeadingCenter,

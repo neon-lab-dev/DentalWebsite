@@ -1,0 +1,35 @@
+/* Inside your tailwind.css or global.css */
+
+@layer components {
+    /* Customize the calendar background color and padding */
+    .custom-datetime-picker .react-datetime-picker__calendar {
+      @apply bg-blue-100 p-6 rounded-lg;
+    }
+  
+    /* Adjust the size of the calendar */
+    .custom-datetime-picker .react-datetime-picker__calendar {
+      @apply w-[400px] !important;
+      font-size: 1.25rem !important;
+    }
+  
+    /* Style the days on the calendar */
+    .custom-datetime-picker .react-datetime-picker__day {
+      @apply text-lg font-medium p-4 rounded-full;
+    }
+  
+    /* Style the selected day */
+    .custom-datetime-picker .react-datetime-picker__day--selected {
+      @apply bg-blue-500 text-white;
+    }
+  
+    /* Hover effect for days */
+    .custom-datetime-picker .react-datetime-picker__day:hover {
+      @apply bg-blue-200;
+    }
+  
+    /* Style for the time section */
+    .custom-datetime-picker .react-datetime-picker__time {
+      @apply font-semibold text-lg bg-blue-100 p-2 rounded-md;
+    }
+  }
+  
