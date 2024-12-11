@@ -4,9 +4,10 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 const ImageGallary = () => {
-  const [isOpen, setIsOpen] = useState<number | null>(null);
+  const [isOpen, setIsOpen] = useState<number>(0); // Default to the first image being open
   const toggle = ({ currentIdx }: { currentIdx: number }) =>
-    setIsOpen((prevIdx) => (prevIdx === currentIdx ? null : currentIdx));
+    setIsOpen((prevIdx) => (prevIdx === currentIdx ? 0 : currentIdx));
+
   const sliders = [
     { img: IMAGES.location1, title: "New York City" },
     { img: IMAGES.location2, title: "Los Angeles" },
@@ -20,9 +21,7 @@ const ImageGallary = () => {
         <div
           onClick={() => toggle({ currentIdx: idx })}
           className={`cursor-pointer relative rounded-3xl bg-gray-300 duration-500 ease-in-out h-[670px] ${
-            idx === 0
-              ? "w-[350px] 2xl:w-[450px]" // Larger width for the first image
-              : isOpen === idx
+            isOpen === idx
               ? "w-[300px] 2xl:w-[402px]" // Expanded width for clicked image
               : "w-[100px] 2xl:w-[118px]" // Default width for unclicked images
           }`}
