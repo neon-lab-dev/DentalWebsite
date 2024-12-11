@@ -21,7 +21,7 @@ const FAQ = () => {
         <FAQCard />
         <FAQCard />
       </div>
-    </div>
+    </div> 
   ); 
 };
  

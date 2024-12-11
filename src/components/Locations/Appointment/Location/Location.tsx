@@ -9,7 +9,7 @@ const Location = () => {
       <div className="w-[90%] font-Amiri font-bold xl:text-[64px] md:text-[48px] text-[36px] xl:leading-[90px] md:leading-[44px] leading-[40px] text-center py-[60px] ">
         Schedule Your Appointment Today
       </div>
-      <div className="flex flex-col items-center justify-center xl:gap-12 py-12 xl:px-[47px] px-4 rounded-[48px] xl:w-[90%] md:mx-8 mx-4 bg-[#EBFAFF] border border-[#333] shadow-sm ">
+      <div className="flex flex-col items-center justify-center gap-12 md:py-12 py-6 xl:px-[47px] md:px-[31px] px-4 xl:rounded-[48px] md:rounded-[32px] rounded-2xl w-[90%] bg-[#EBFAFF] border border-[#333] shadow-sm ">
         <div className="flex justify-between gap-5 w-full">
           <div className="h-[16px] bg-[#FF7F50] rounded-[30px] flex-1"></div>
           <div className="h-[16px] bg-[#FF7F50] rounded-[30px] flex-1"></div>

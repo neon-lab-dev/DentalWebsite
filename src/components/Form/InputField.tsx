@@ -17,7 +17,7 @@ const InputField: React.FC<InputFieldProps> = ({
   id, 
   name,
   label,
-  placeholder,
+  placeholder, 
   value,
   onChange,
   className = '',
@@ -28,7 +28,7 @@ const InputField: React.FC<InputFieldProps> = ({
     return (
       <div className={`flex flex-col space-y-1 ${className}`}>
         {/* Label */}
-        <label htmlFor={id} className="text-[32px] leading-[42px] font-bold font-Amiri text-[#000]">
+        <label htmlFor={id} className="xl:text-[32px] md:text-2xl text-[16px] xl:leading-[42px] leading-9 font-bold font-Amiri text-[#000]">
           {label}
         </label>
 
@@ -38,7 +38,7 @@ const InputField: React.FC<InputFieldProps> = ({
           name={name}
           value={value}
           onChange={onChange}
-          className="px-4 py-3 bg-transparent text-2xl text-black border border-black rounded-xl"
+          className="xl:px-4 xl:py-3 md:p-4 p-3 bg-transparent xl:text-2xl md:text-[16px] md:leading-6 text-xs leading-normal text-black border border-black rounded-xl"
         >
           {options.map((option, index) => (
             <option key={index} value={option}>
@@ -54,7 +54,7 @@ const InputField: React.FC<InputFieldProps> = ({
   return (
     <div className={`flex flex-col space-y-1 ${className}`}>
       {/* Label */}
-      <label htmlFor={id} className="text-[32px] leading-[42px] font-bold font-Amiri text-[#000]">
+      <label htmlFor={id} className="xl:text-[32px] md:text-2xl text-[16px] xl:leading-[42px] leading-9 font-bold font-Amiri text-[#000]">
         {label}
       </label>
 
@@ -66,7 +66,7 @@ const InputField: React.FC<InputFieldProps> = ({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className="px-4 py-3 bg-transparent text-2xl text-black border border-black rounded-xl"
+        className="xl:px-4 xl:py-3 md:p-4 p-3 bg-transparent xl:text-2xl md:text-[16px] md:leading-6 text-xs leading-normal text-black border border-black rounded-xl"
       />
     </div>
   );

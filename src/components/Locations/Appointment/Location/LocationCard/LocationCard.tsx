@@ -15,7 +15,7 @@ const LocationCard = ({ details, onMainCardClick, isMainCardSelected }: Location
     <div>
       <div className="flex flex-col items-center">
         {/* Main Card */}
-        <div
+        <div 
           onClick={onMainCardClick} 
           className={`relative overflow-hidden group cursor-pointer rounded-3xl mb-4 ${
             isMainCardSelected ? "bg-blue-500" : ""
@@ -34,10 +34,10 @@ const LocationCard = ({ details, onMainCardClick, isMainCardSelected }: Location
           <div className="absolute top-0 left-0 w-full h-full shadow-sm bg-gradient-to-b from-transparent to-[#F5F5DC] opacity-30 group-hover:opacity-50 transition-opacity duration-500 z-10"></div>
 
           <div className="absolute top-[12%] transform group-hover:translate-y-[-10%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col p-12">
-            <h1 className="text-black capitalize text-[48px] font-bold leading-normal 2xl:leading-[66px] font-Amiri">
+            <h1 className="text-black capitalize xl:text-5xl md:text-2xl text-[16px]  font-bold xl:leading-[66px] md:leading-9 leading-6 font-Amiri">
               {details.name}
             </h1>
-            <p className="z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 transition-all duration-700 text-black font-Poppins text-[22px]">
+            <p className="z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 transition-all duration-700 text-black font-Poppins xl:text-[22px] md:text-[16px] text-xs ">
               {details.numberOfClinic}
             </p>
           </div>

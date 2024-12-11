@@ -8,7 +8,7 @@ const AppointmentHome = () => {
 
   const handleBtnClick = (btnType: string) => {
     setSelectedBtn((prev) => (prev === btnType ? null : btnType));
-  };
+  }; 
 
   return (
     <div className="flex flex-col items-center ">

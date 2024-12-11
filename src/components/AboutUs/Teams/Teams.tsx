@@ -3,6 +3,7 @@ import React from "react";
 import TeamCard from "./TeamCard";
 
 const Teams = () => {
+   const cards = [1, 2, 3, 4];
   return (
     <div className="flex flex-col items-center xl:gap-[89px] gap-12  xl:mx-[120px] xl:my-[106px] ">
       <div className="flex flex-col md:gap-8 gap-4 w-full max-w-[1276px]">
@@ -23,16 +24,13 @@ const Teams = () => {
           together to ensure every visit is a positive experience.
         </p>
       </div>
-      <div className="xl:flex xl:w-full gap-6 items-center justify-around md:grid md:grid-cols-2 md:grid-rows-2">
-        <div className="xl:pt-[125px]">
+      <div className="xl:flex xl:w-full gap-6 items-center justify-around md:grid md:grid-cols-2 md:grid-rows-2 ">
+      {cards.map((card, index) => (
+        <div key={index} className={index % 2 === 0 ? "xl:pt-[125px]" : ""}>
           <TeamCard />
         </div>
-        <TeamCard />
-        <div className="xl:pt-[125px]"> 
-          <TeamCard />
-        </div>
-        <TeamCard />
-      </div>
+      ))}
+    </div>
     </div>
   );
 };

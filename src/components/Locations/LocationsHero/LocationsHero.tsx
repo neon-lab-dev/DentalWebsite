@@ -1,6 +1,7 @@
 import Button from "@/components/Buttons/Button";
 import Heading from "@/components/shared/Heading/Heading";
 import ImageGallary from "./ImageGallary";
+import Link from "next/link";
 
 const LocationsHero = () => {
   return (
@@ -19,11 +20,19 @@ const LocationsHero = () => {
           Our experienced team is dedicated to helping you achieve a healthy,
           confident smile in a comfortable environment.
         </p>
+        
         <div className="flex items-center justify-start mt-8 gap-6">
-        <Button variant="Gradient" classNames="md:px-[50px] md:py-[22px] md:px-[36px] sm:py-[16px] px-[28px] py-[14px] ">
-          <p className="md:text-[22px] sm:text-[18px] text-base">Schedule An Appointment!</p>
-        </Button>
-      </div>
+          <Link href={`/locations/schedule-appointment`}>
+            <Button
+              variant="Gradient"
+              classNames="md:px-[50px] md:py-[22px] md:px-[36px] sm:py-[16px] px-[28px] py-[14px] "
+            >
+              <p className="md:text-[22px] sm:text-[18px] text-base">
+                Schedule An Appointment!
+              </p>
+            </Button>
+          </Link>
+        </div>
       </div>
       <div className="md:w-[50%] w-[100%]">
         <ImageGallary />
