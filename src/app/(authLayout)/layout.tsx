@@ -5,13 +5,13 @@ import Container from '@/components/shared/Container/Container';
 const AuthLayout = ({children}:{children:ReactNode}) => {
   return (
    <Container>
-     <div className='flex justify-center items-center gap-20'>
+     <div className='flex xl:flex-row flex-col justify-center items-center gap-20 p-4 md:py-12  '>
      <div className="w-full relative">
   {/* Image */}
   <Image
     className="object-cover rounded-3xl"
     src={`/assets/images/LoginSignup.png`}
-    alt="Login or Sign Up Page Image"
+    alt="Login or Sign Up Page Image" 
     width={832}
     height={984}
   />

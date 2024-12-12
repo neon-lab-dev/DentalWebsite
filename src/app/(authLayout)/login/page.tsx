@@ -11,7 +11,7 @@ interface FormData {
 }
 
 const LoginPage = () => {
-  const [formData, setFormData] = useState<FormData>({
+  const [formData, setFormData] = useState<FormData>({ 
     username: "",
     email: "",
   });
@@ -32,11 +32,11 @@ const LoginPage = () => {
       <div className=" w-full flex justify-start items-center gap-20">
        
         <div className="">
-          <div className="py-6">
-            <h1 className="font-Amiri text-5xl font-bold leading-[66px] pb-8 text-[#101010]">
+          <div className="py-6 xl:text-left text-center">
+            <h1 className="font-Amiri  text-5xl font-bold leading-[66px] xl:pb-8 md:pb-12 pb-8 text-[#101010]">
               Welcome Back!
             </h1>
-            <p className="font-Poppins text-lg text-[#333]">
+            <p className="font-Poppins xl:text-lg md:text-[16px] text-xs text-[#333]">
               Access your account to manage appointments, review treatment
               plans, and stay connected with your dental care. Enter your
               details below to get started.
@@ -71,7 +71,7 @@ const LoginPage = () => {
               Submit
             </Button>
           </form>
-          <p className="text-lg pt-6">
+          <p className="text-lg pt-6 text-center xl:text-left">
             Dont have an account?{" "}
             <span className="text-[#FF7F50] cursor-pointer"> Sign Up </span>
           </p>

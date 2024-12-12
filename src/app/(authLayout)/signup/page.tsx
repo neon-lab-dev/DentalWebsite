@@ -42,18 +42,18 @@ const SignUpPage = () => {
 
   return (
     <div className=" w-full flex justify-start items-center gap-20">
-      <div className="">
+      <div className=" w-full">
         <div className="py-6">
-          <h1 className="font-Amiri text-5xl font-bold leading-[66px] pb-4 text-[#101010]">
+          <h1 className="font-Amiri text-5xl font-bold leading-[66px]  xl:pb-8 md:pb-12 pb-4 text-[#101010]">
             Join Our Dental Family
           </h1>
-          <p className="font-Poppins text-lg pt-4 text-[#333]">
+          <p className="font-Poppins xl:text-lg md:text-[16px] text-xs md:pt-0 pt-4 text-[#333]">
             Sign up today and take the first step toward a healthier smile.
           </p>
         </div>
         <form onSubmit={handleSubmit} className="max-w-[840px]  space-y-4">
           <div className="py-6 flex flex-col  gap-8">
-            <div className="flex gap-8">
+            <div className="flex xl:flex-row flex-col gap-8">
               <InputField
                 id="firstname"
                 name="fname"
@@ -75,7 +75,7 @@ const SignUpPage = () => {
                 className="w-full"
               />
             </div>
-            <div className="flex gap-8">
+            <div className="flex xl:flex-row flex-col gap-8">
               <InputField
                 id="emailId"
                 name="email"
@@ -97,7 +97,7 @@ const SignUpPage = () => {
                 className="w-full"
               />
             </div>
-            <div className="flex gap-8">
+            <div className="flex xl:flex-row flex-col gap-8">
               <InputField
                 id="DOB"
                 name="dob"
@@ -127,7 +127,7 @@ const SignUpPage = () => {
                 className="w-full"
               />
             </div>
-            <div className="flex gap-8">
+            <div className="flex xl:flex-row flex-col gap-8">
               <InputField
                 id="password"
                 name="password"
@@ -155,7 +155,7 @@ const SignUpPage = () => {
             Login
           </Button>
         </form>
-        <p className="text-lg pt-6">
+        <p className="text-lg pt-6 text-center xl:text-left">
           Already have an account?{" "}
           <span className="text-[#FF7F50] cursor-pointer"> Login </span>
         </p>
